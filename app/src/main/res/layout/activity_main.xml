@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:id="@+id/details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:stretchColumns="1">
+
+        <TableRow>
+        <TextView
+            android:text="Name:" />
+        <EditText
+            android:id="@+id/name"
+            android:hint="Enter name here"
+            android:height="50dp"/>
+         </TableRow>
+        <TableRow>
+
+        <TextView
+            android:text="Address:" />
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="323dp"
+            android:height="50dp"
+            android:hint="Enter address here" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Type:"/>
+            <RadioGroup
+                android:id="@+id/types">
+              <RadioButton
+                  android:id="@+id/take_away"
+                  android:text="@string/take_away"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/sit_down"
+                    android:text="@string/sit_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/delivery"
+                    android:text="@string/delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+
+        </TableRow>
+            <Button
+                android:id="@+id/add"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Add" />
+
+    </TableLayout>
+    <ListView
+        android:id="@+id/restaurants"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/details"/>
+</RelativeLayout>
