@@ -1,4 +1,4 @@
-package com.example.lunchlist;
+package com.example.lunchlist.model;
 
 public class Restaurant {
     private String name="";

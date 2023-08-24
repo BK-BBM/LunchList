@@ -12,6 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LunchList"
         tools:targetApi="31">
+<!--   Manifest activity block. This block will list (register) all the activities in the app.
+       The intent-filter block lets us choose how we want the activities to behave.
+       If the activity is set to "MAIN / LAUNCHER" this tells android that it should
+       be the first activity that pops up when the app is opened/started
+-->
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -22,6 +27,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"/>
+        <activity android:name=".DashboardActivity"/>
     </application>
 
 </manifest>

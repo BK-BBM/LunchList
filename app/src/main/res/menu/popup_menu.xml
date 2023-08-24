@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/popUp_profile"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/popUp_History"
+        android:title="History"/>
+
+    <item
+        android:id="@+id/popUp_darkmode"
+        android:title="Dark Mode"/>
+
+    <item
+        android:id="@+id/popUp_settings"
+        android:title="Settings"/>
+    <item
+        android:id="@+id/popUp_Logout"
+        android:title="Logout"/>
+
+</menu>
